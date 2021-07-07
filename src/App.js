@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Form from './components/form';
+import Table from './components/table';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    nam:"",
+    address:"Dhaka",
+    contacts:[
+      { name: "bisnu", address: "Dinajpur" },
+      { name: "Sopon", address: "Dhaka" },
+      { name: "Manum", address: "Rangpur" }
+    ]
+  }
+  nameC(e){
+ 
+  }
+  render() {
+    return (
+      <div className="container border mx-auto shadow-lg p-5 rounded">
+        <div className="row">
+          <div className="col-6">
+            <Form nam={this.state.nam} address={this.state.address} change={this.nameC} />
+          </div>
+          <div className="col-6">
+            <Table data={this.state.contacts} />
+          </div>
+        </div>
+
+      </div>
+    );
+  }
 }
 
 export default App;
