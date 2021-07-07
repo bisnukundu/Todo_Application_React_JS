@@ -38,6 +38,15 @@ class App extends React.Component {
     })
   }
 
+  deleteItem = id=>{
+
+    let d = this.state.contacts.filter((data,i) =>{ return i !== id});
+    this.setState({
+      contacts:d
+    })
+      console.log(d);
+  }
+
   render() {
     return (
       <div className="container border mx-auto shadow-lg p-5 rounded">
@@ -46,7 +55,7 @@ class App extends React.Component {
             <Form sv={this.save} addC={this.addC} nam={this.state.nam} address={this.state.address} change={this.nameC} />
           </div>
           <div className="col-6">
-            <Table data={this.state.contacts} />
+            <Table del={this.deleteItem} data={this.state.contacts} />
           </div>
         </div>
 

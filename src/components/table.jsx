@@ -21,7 +21,7 @@ class Table extends React.Component {
                                     <td>{d.name}</td>
                                     <td>{d.address}</td>
                                     <td>
-                                        <button className="btn btn-danger btn-sm">Delete</button>
+                                        <button onClick={()=>{this.props.del(index)}} className="btn btn-danger btn-sm">Delete</button>
                                     </td>
                                 </tr>
                             )
