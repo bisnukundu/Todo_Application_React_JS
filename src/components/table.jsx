@@ -20,7 +20,8 @@ class Table extends React.Component {
                                     <th scope="row">{index}</th>
                                     <td>{d.name}</td>
                                     <td>{d.address}</td>
-                                    <td>
+                                    <td className="btn-group">
+                                        <button onClick={()=>{this.props.edit(index)}} className="btn btn-warning btn-sm">Edit</button>
                                         <button onClick={()=>{this.props.del(index)}} className="btn btn-danger btn-sm">Delete</button>
                                     </td>
                                 </tr>
