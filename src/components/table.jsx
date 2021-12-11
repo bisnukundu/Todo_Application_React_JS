@@ -14,7 +14,7 @@ class Table extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                        {this.props.data.map((d, index) => {
+                        {this.props.data?.map((d, index) => {
                             return (
                                 <tr key={index}>
                                     <th scope="row">{index}</th>
