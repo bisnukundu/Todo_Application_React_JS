@@ -2,7 +2,6 @@ import React from "react";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Form from './components/form';
 import Table from './components/table';
-import { useState } from 'react'
 
 function App() {
 
