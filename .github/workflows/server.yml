@@ -24,4 +24,4 @@ jobs:
         server: ftp.eyakubhabib.com
         username: bisnukundu@eyakubhabib.com
         password: ${{ secrets.password }}  # BWW+ty[ZFU?S
-        server-dir: home/eyakehne/react.eyakubhabib.com/
+        port: 21
