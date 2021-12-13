@@ -28,6 +28,7 @@ jobs:
         username: bisnukundu@eyakubhabib.com
         password: ${{ secrets.password }}  # BWW+ty[ZFU?S
         port: 21
+        
     - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
