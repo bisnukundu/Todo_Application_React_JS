@@ -14,12 +14,13 @@
     "sweetalert2": "^11.0.18",
     "web-vitals": "^1.1.2"
   },
+  "homepage": "https://bisnukundu.github.io/Todo_Application_React_JS",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy" : "npm run buld && gh-pages -d build"
+    "deploy" : "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
