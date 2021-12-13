@@ -14,7 +14,7 @@
     "sweetalert2": "^11.0.18",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "https://bisnukundu.github.io/Todo_Application_React_JS",
+  "homepage": "http://react.eyakubhabib.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
