@@ -4,7 +4,8 @@ class Form extends React.Component {
         return (
             <div>
                 <h3 style={{fontFamily:"gabriola"}} className="text-center">Created By Bisnu kundu</h3>
-                <small className="text-center">Thanks gh-pages</small>
+                <h6 className="text-center">Thanks gh-pages</h6>
+                
                 <form onSubmit={this.props.sv}>
                     <div className="form-group mb-2">
 
